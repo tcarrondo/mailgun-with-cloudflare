@@ -1,17 +1,3 @@
-# The DNS zone settings
-
-resource "cloudflare_zone_settings_override" "zone_settings" {
-  name    = "${var.domain}"
-
-  settings {
-    ssl = "full"
-    always_use_https = "on"
-    automatic_https_rewrites = "on"
-    cache_level = "aggressive"
-    development_mode = "off"
-  }
-}
-
 # Adding the domain to Mailgun
 
 resource "mailgunv3_domain" "domain" {

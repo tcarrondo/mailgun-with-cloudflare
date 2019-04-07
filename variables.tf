@@ -1,2 +1,2 @@
-variable "domain" { }
-variable "smtp_password" { }
+variable "domain" {}
+variable "smtp_password" {}

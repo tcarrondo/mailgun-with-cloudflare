@@ -1,9 +1,9 @@
 # Adding the domain to Mailgun
 
 resource "mailgunv3_domain" "domain" {
-    name          = "${var.domain}"
-    spam_action   = "disabled"
-    smtp_password = "${var.smtp_password}"
+  name          = "${var.domain}"
+  spam_action   = "disabled"
+  smtp_password = "${var.smtp_password}"
 }
 
 # Adding the DNS records to Cloudflare
